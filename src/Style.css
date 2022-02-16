@@ -37,6 +37,59 @@ body {
     font-weight: var(--fw-regular);
 }
 
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+
+/* ================================= Home page stories grid container ================================= */
+.stories-home-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .stories-home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .stories-home-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+
+/* ================================= Features grid container, used on home & features page ================================= */
+.features-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+@media (min-width: 1200px) {
+    .features-grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 7rem 0;
+    }
+}
+
+
+
 
 
 @keyframes opacity {

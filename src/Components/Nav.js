@@ -80,7 +80,7 @@ export default Nav;
 
 // ====================================== Container
 const NavContainer = styled.nav`
-  background-color: var(--gray);
+  background-color: var(--white);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -89,7 +89,7 @@ const NavContainer = styled.nav`
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   @media (min-width: 768px) {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     animation: opacity 0.25s linear;
   }
   @media (min-width: 1000px) {
@@ -118,7 +118,7 @@ const NavContainer = styled.nav`
   }
 
   .nav-menu {
-    background-color: var(--gray);
+    background-color: var(--white);
     display: block;
     position: absolute;
     top: 0;
