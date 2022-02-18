@@ -37,5 +37,12 @@ const FeatureCard = styled.div`
 
     h3 {
         margin: 2rem 0;
+        font-size: 1.45rem;
+        font-weight: var(--fw-bold);
+        letter-spacing: 0.5px;
+    }
+
+    p {
+        line-height: 1.5;
     }
 `

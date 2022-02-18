@@ -93,8 +93,8 @@ const StoryContainer =styled.div`
       }
 
       img {
-            filter: invert(100%);
-        }
+        filter: invert(100%);
+      }
     }
   }
 `

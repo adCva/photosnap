@@ -73,11 +73,11 @@ footer {
 .features-grid-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 @media (min-width: 1200px) {
@@ -85,6 +85,13 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 7rem 0;
+    }
+
+    .plans-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
     }
 }
 
@@ -100,3 +107,6 @@ footer {
         opacity: 1;
     }
 }
+
+
+
