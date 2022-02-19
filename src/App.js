@@ -15,12 +15,12 @@ import Pricing from "./Pages/Pricing";
 function App() {
   return (
     <BrowserRouter className="App">
-    <Routes>
-      <Route exact path="/" element={<Home />}/>
-      <Route path="/stories" element={<Stories />}/>
-      <Route path="/features" element={<Features />}/>
-      <Route path="/pricing" element={<Pricing />}/>
-    </Routes>
+      <Routes>
+        <Route exact path="/" element={<Home />}/>
+        <Route path="/stories" element={<Stories />}/>
+        <Route path="/features" element={<Features />}/>
+        <Route path="/pricing" element={<Pricing />}/>
+      </Routes>
   </BrowserRouter>
   );
 }

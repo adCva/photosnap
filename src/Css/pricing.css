@@ -88,6 +88,14 @@
         padding: 6rem 0;
     }
 
+    .plans-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .switch-btn-container  {
         margin: 0 auto 4rem;
     }
@@ -97,9 +105,7 @@
 /* ================= Desktop @media ================= */
 @media (min-width: 1200px) {
     .plans-container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 0;

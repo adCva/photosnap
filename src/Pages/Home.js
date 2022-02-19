@@ -1,9 +1,10 @@
 import React from 'react';
-import Descriptive from '../Components/Descriptive';
-import Feature from '../Components/Feature';
 import Nav from '../Components/Nav';
+import Descriptive from '../Components/Descriptive';
 import Story from '../Components/Story';
+import Feature from '../Components/Feature';
 import Footer from '../Components/Footer';
+
 
 function Home() {
   return (

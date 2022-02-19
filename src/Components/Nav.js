@@ -31,10 +31,13 @@ function Nav() {
       }
     }
 
-    window.addEventListener("resize", mobileNavScreenWidth)
+    //window.scrollTo(0, 0);
+    
+    
+    window.addEventListener("resize", mobileNavScreenWidth);
     
     return() => {
-        window.removeEventListener("resize", mobileNavScreenWidth)
+        window.removeEventListener("resize", mobileNavScreenWidth);
     }
   });
 

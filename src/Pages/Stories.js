@@ -1,8 +1,9 @@
 import React from 'react';
 import Nav from '../Components/Nav';
-import Footer from '../Components/Footer';
-import Story from '../Components/Story';
 import HeroStory from '../Components/HeroStory';
+import Story from '../Components/Story';
+import Footer from '../Components/Footer';
+
 
 function Stories() {
   return (

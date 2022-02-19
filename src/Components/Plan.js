@@ -31,6 +31,7 @@ const PlanContainer = styled.div`
   max-width: 340px;
   margin: 0 auto;
   padding: 2.5rem 1rem 3rem; 
+  user-select: none;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: var(--transition);

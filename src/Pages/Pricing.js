@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Nav from '../Components/Nav';
-import Footer from '../Components/Footer';
 import Descriptive from '../Components/Descriptive';
-import Beta from '../Components/Beta';
 import Plan from '../Components/Plan';
 import Table from '../Components/Table';
+import Beta from '../Components/Beta';
+import Footer from '../Components/Footer';
+
+
 
 function Pricing() {
   const [ yearPlan, setYearPlan ] = useState(true);

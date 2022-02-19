@@ -2,8 +2,9 @@ import React from 'react';
 import Nav from '../Components/Nav';
 import Descriptive from '../Components/Descriptive';
 import Feature from '../Components/Feature';
-import Footer from '../Components/Footer';
 import Beta from '../Components/Beta';
+import Footer from '../Components/Footer';
+
 
 function Features() {
   return (
