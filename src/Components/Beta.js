@@ -23,9 +23,9 @@ export default Beta;
 
 
 
+// ========================================================== Styled Components ==========================================================
 
-
-
+// ====================================== Wrapper
 const BetaWrapper = styled.section`
   background: url("./images/bg-beta-mobile.jpg") center/cover no-repeat;
   height: 300px;
@@ -43,6 +43,7 @@ const BetaWrapper = styled.section`
 `
 
 
+// ====================================== Container
 const BetaContainer = styled.div`
   width: 90%;
   max-width: 1200px;
@@ -52,46 +53,52 @@ const BetaContainer = styled.div`
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
+
+  // ========== Text
   h3 {
     font-size: 2rem;
     font-weight: var(--fw-bold);
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
 
     @media (min-width: 768px) {
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       width: 300px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 2.1rem;
     }
   }
 
 
-    // ========== Button
-    button {
-        background: none;
-        color: var(--white); 
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        font-size: 0.75rem;
-        font-weight: var(--fw-bold);
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: var(--transition);
+  // ========== Button
+  button {
+    background: none;
+    color: var(--white); 
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
 
-        :hover {
-            text-decoration: underline;
-        }
-
-        img {
-            filter: invert(100%);
-        }
-
-        @media (min-width: 1200px) {
-            font-size: 0.85rem;
-        }
+    :hover {
+      text-decoration: underline;
     }
+
+    img {
+      width: 40px;
+      filter: invert(100%);
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 0.85rem;
+    }
+  }
 `

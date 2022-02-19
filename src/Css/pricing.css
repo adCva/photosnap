@@ -1,0 +1,111 @@
+/* ================= Main Container ================= */
+.pricing-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+
+
+/* ================= Plans container ================= */
+.plans-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+
+/* ================= Switch Button ================= */
+.switch-btn-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 3rem;
+}
+
+.switch-btn-container p {
+    font-size: 1.15rem;
+    font-weight: var(--fw-medium);
+    letter-spacing: 0.6px;
+}
+
+.switch-btn {
+    background-color: var(--blue);
+    box-sizing: border-box;
+    width: 65px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 1rem;
+    transition: var(--transition);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.switch-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.switch-btn::before {
+    content: "";
+    background-color: var(--gray);
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    float: left;
+}
+
+.switch-btn-right {
+    background-color: #636363;
+    width: 65px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 1rem;
+    transition: var(--transition);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.switch-btn-right:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.switch-btn-right::before {
+    content: "";
+    background-color: var(--gray);
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    float: right; 
+}
+
+
+
+/* ================= Tablet @media ================= */
+@media (min-width: 768px) {
+    .pricing-details-container {
+        padding: 6rem 0;
+    }
+
+    .switch-btn-container  {
+        margin: 0 auto 4rem;
+    }
+}
+
+
+/* ================= Desktop @media ================= */
+@media (min-width: 1200px) {
+    .plans-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .switch-btn-container  {
+        margin: 0 auto 5rem;
+    }
+}

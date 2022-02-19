@@ -9,7 +9,7 @@ function Descriptive(props) {
         <TextContainer darkBg={props.darkBg}>
             <h1>{props.descriptiveTitle}</h1>
             <p>{props.descriptiveParagraph}</p>
-            <button>{props.buttonText} <img src="./images/arrow.svg" alt="Arrow" /></button>
+            <TextButton exists={props.showButton} darkBg={props.darkBg}>{props.buttonText} <img src="./images/arrow.svg" alt="Arrow" /></TextButton>
         </TextContainer>
         <DescImage>
             <source media="(min-width: 1200px)" srcSet={`./images/${props.descImage}-desktop.jpg`} />
@@ -100,34 +100,6 @@ const TextContainer = styled.div`
             font-size: 1.15rem;
         }
     }
-
-
-    // ========== Button
-    button {
-        background: none;
-        color: ${({darkBg}) => (darkBg ? "var(--white)" : "var(--black)")}; 
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 0.75rem;
-        font-weight: var(--fw-bold);
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        transition: var(--transition);
-
-        :hover {
-            text-decoration: underline;
-        }
-
-        img {
-            filter: ${({darkBg}) => (darkBg ? "invert(100%)" : "none")};
-        }
-
-        @media (min-width: 1200px) {
-            font-size: 0.85rem;
-        }
-    }
 `
 
 
@@ -144,5 +116,33 @@ const DescImage = styled.picture`
     }
     @media (min-width: 1200px) {
         width: 60%;
+    }
+`
+
+
+
+const TextButton = styled.button`
+    background: none;
+    color: ${({darkBg}) => (darkBg ? "var(--white)" : "var(--black)")}; 
+    display: ${({exists}) => (exists ? "flex" : "none")};
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+
+    :hover {
+        text-decoration: underline;
+    }
+
+    img {
+        filter: ${({darkBg}) => (darkBg ? "invert(100%)" : "none")};
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 0.85rem;
     }
 `

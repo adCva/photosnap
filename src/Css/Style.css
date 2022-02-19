@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+
+    
+
+    /* =========== Typography. =========== */
+    --ff-main: 'DM Sans', sans-serif;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+
+
+    /* =========== Primary colors. =========== */
+    --white: #ffffff;
+    --gray: #f7f7f7;
+    --darker-gray: #dedede;  
+    --very-dark-gray: #979797;
+    --black: #000000;  
+
+
+
+    /* =========== Other colors. =========== */
+    --light-orange: #ffc694;
+    --pink: #ff2e9a;
+    --blue: #5776ff;
+    --mix: linear-gradient(#ffc694, #ff2e9a, #5776ff);
+
+
+
+    --transition: all 0.25s ease-in-out;
+}
+
+
+body {
+    font-family: var(--ff-main);
+    font-weight: var(--fw-regular);
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+/* ================= Animations ================= */
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

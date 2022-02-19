@@ -2,11 +2,11 @@ import React from 'react';
 import styled from "styled-components";
 
 
-
 function Story(props) {
   return (
     <StoryContainer bgImage={props.bgImage}>
       <div>
+        <StoryDate exists={props.showDate}>{props.storyDate}</StoryDate>
         <h3>{props.storyTitle}</h3>
         <p>by {props.author}</p>
         <button>Read story <img src="./images/arrow.svg" alt="Arrow" /></button>
@@ -22,9 +22,10 @@ export default Story;
 
 
 
-//background-image: "url(`.Assets/bgImage-mobile.jpg`)";
+
 // ========================================================== Styled Components ==========================================================
 
+// ====================================== Container
 const StoryContainer =styled.div`
   width: 100%;
   height: 370px;
@@ -40,17 +41,17 @@ const StoryContainer =styled.div`
     height: 410px;
   }
   @media (min-width: 768px) {
-    height: 550px;
+    height: 500px;
     background-image: url(./images/${({bgImage}) => (bgImage)}-desktop.jpg);
   }
   @media (min-width: 1200px) {
     height: 450px;
   }
   @media (min-width: 1400px) {
-    height: 550px;
+    height: 500px;
   }
   @media (min-width: 1600px) {
-    height: 650px;
+    height: 550px;
   }
 
 
@@ -59,13 +60,15 @@ const StoryContainer =styled.div`
     color: var(--white);
     padding: 2.2rem 1.6rem;
 
-
+    // ========== Title
     h3 {
       font-size: 1.5rem;
       font-weight: var(--fw-bold);
       letter-spacing: 0.5px;
     }
 
+
+    // ========== Description
     p {
       font-size: 0.93rem;
       letter-spacing: 0.5px;
@@ -74,6 +77,8 @@ const StoryContainer =styled.div`
       border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     }
 
+
+    // ========== Read button
     button {
       width: 100%;
       background: none;
@@ -93,8 +98,18 @@ const StoryContainer =styled.div`
       }
 
       img {
+        width: 35px;
         filter: invert(100%);
       }
     }
   }
+`
+
+
+
+const StoryDate = styled.h6`
+  display: ${({exists}) => (exists ? "block" : "none")};
+  font-size: 0.87rem;
+  letter-spacing: 0.5px;
+  margin: 0.75rem 0 0.9rem;
 `

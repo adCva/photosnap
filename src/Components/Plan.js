@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 function Plan(props) {
   return (
-    <PlanContainer>
+    <PlanContainer bgColor={props.planTimeline}>
         <h3>{props.title}</h3>
         <p>{props.planDescription}</p>
         <h4>${props.price}</h4>
@@ -22,28 +22,40 @@ export default Plan;
 
 
 
+// ========================================================== Styled Components ==========================================================
 
+// ====================================== Container
 const PlanContainer = styled.div`
-  background-color: var(--gray);
+  background-color: ${({bgColor}) => (bgColor)};
   width: 85%;
-  max-width: 350px;
-  margin: 0 auto 2rem;
+  max-width: 340px;
+  margin: 0 auto;
   padding: 2.5rem 1rem 3rem; 
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: var(--transition);
+
+  :hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 
 
   h3 {
     color: var(--black);
-    font-size: 1.5rem;
+    font-size: 1.55rem;
     font-weight: var(--fw-bold);
     margin-bottom: 0.5rem;
   }
 
 
   p {
-    color: var(--very-dark-gray);
     font-size: 0.95rem;
     line-height: 1.6;
+    opacity: 0.55;
     transition: var(--transition);
   }
 
@@ -52,7 +64,7 @@ const PlanContainer = styled.div`
     color: var(--black);
     font-size: 2.5rem;
     font-weight: var(--fw-bold);
-    margin: 2.2rem 0 0.7rem;
+    margin: 2rem 0 0;
     transition: var(--transition);
   }
 
@@ -67,5 +79,15 @@ const PlanContainer = styled.div`
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-top: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+
+    :hover {
+      background-color: var(--blue);
+    }
+
+    :focus {
+      background-color: var(--blue);
+    }
   }
 ` 

@@ -1,0 +1,25 @@
+/* ================================= Stories grid container ================================= */
+.stories-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ================= Tablet @media ================= */
+@media (min-width: 768px) {
+    .stories-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/* ================= Desktop @media ================= */
+@media (min-width: 1200px) {
+    .stories-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -6,7 +6,7 @@ import { useTransition, animated } from 'react-spring';
 
 
 function Nav() {
-  const [ mobileMenu, setMobileMenu ] = useState(window.innerWidth > 768 ? true : false);
+  const [ mobileMenu, setMobileMenu ] = useState(window.innerWidth > 767 ? true : false);
 
   const toogleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
@@ -14,7 +14,7 @@ function Nav() {
 
 
   const closeMobileMenuOnLinkClick = () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 767) {
       setMobileMenu(true);
     } else {
       setMobileMenu(false);
@@ -242,6 +242,6 @@ const InviteButtonDesktop = styled.button`
   }
 
   :hover {
-    background-color: var(--very-dark-gray);
+    background-color: var(--blue);
   }
 `

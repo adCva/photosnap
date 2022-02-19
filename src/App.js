@@ -1,5 +1,8 @@
-import './Reset.css';
-import './Style.css';
+import './Css/Reset.css';
+import './Css/Style.css';
+import './Css/features.css';
+import './Css/pricing.css';
+import './Css/stories.css';
 import { BrowserRouter, Routes, Route}  from 'react-router-dom';
 // ====== Pages.
 import Home from "./Pages/Home";

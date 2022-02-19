@@ -12,7 +12,7 @@ function Features() {
         <Nav />
       </header>
       <main>
-        <Descriptive imageFirst={false} darkBg={true} descriptiveTitle="Features" descriptiveParagraph="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories." descImage="features-hero" buttonText="get an invite" />
+        <Descriptive imageFirst={false} darkBg={true} descriptiveTitle="Features" descriptiveParagraph="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories." descImage="features-hero" buttonText="get an invite" showButton={false} />
 
         <div className="features-grid-container">
           <Feature featureImage="responsive.svg" altTitle="Responsiv" featureTitle="100% Responsive" featureDesc="No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen." />
