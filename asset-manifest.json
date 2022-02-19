@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/photosnap/static/css/main.565e8442.css",
-    "main.js": "/photosnap/static/js/main.49445819.js",
+    "main.js": "/photosnap/static/js/main.4e4aed78.js",
     "index.html": "/photosnap/index.html",
     "main.565e8442.css.map": "/photosnap/static/css/main.565e8442.css.map",
-    "main.49445819.js.map": "/photosnap/static/js/main.49445819.js.map"
+    "main.4e4aed78.js.map": "/photosnap/static/js/main.4e4aed78.js.map"
   },
   "entrypoints": [
     "static/css/main.565e8442.css",
-    "static/js/main.49445819.js"
+    "static/js/main.4e4aed78.js"
   ]
 }
