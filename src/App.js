@@ -14,7 +14,7 @@ import Pricing from "./Pages/Pricing";
 
 function App() {
   return (
-    <BrowserRouter className="App">
+    <BrowserRouter basename={window.location.pathname || ''} className="App">
       <Routes>
         <Route exact path="/" element={<Home />}/>
         <Route path="/stories" element={<Stories />}/>
